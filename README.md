@@ -1,33 +1,25 @@
-# Mingke Wu · Academic website
+# Mingke Wu · Academic homepage
 
-Personal academic website prepared for **https://sorrymaker03.github.io/**.
-Built from the updated CV with plain HTML, CSS, and JavaScript. No package installation, build step, API key, or backend is required.
+为 **https://sorrymaker03.github.io/** 准备的个人学术主页。
 
-## Publish on GitHub Pages
+页面分为 **About → Publications** 两个部分。About 包含研究方向、教育背景、Yale 访问经历、学术训练和获奖信息；Publications 保留 8 篇完整引用和原始论文链接。
 
-1. Sign in to GitHub as `sorrymaker03`.
-2. Create a repository named **`sorrymaker03.github.io`**. If it already exists, use that repository and preserve its existing work.
-3. Upload this folder's contents to the repository root on the `main` branch. `index.html` must be directly at the repository root. Keep the `assets/` folder with its files and the `.nojekyll` file.
-4. Open **Settings → Pages → Build and deployment**.
-5. Set **Source** to **Deploy from a branch**. Choose **main** and **/(root)**, then save.
-6. Use the **Visit site** link in Pages after GitHub finishes deploying. The intended address is **https://sorrymaker03.github.io/**; preparing these files does not mean the address is already live.
+## 文件
 
-Official references: [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) · [Configuring the publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+- `index.html`：姓名、介绍、教育、获奖、论文和三个联系方式图标。
+- `assets/styles.css`：学术风格的白底排版、字号和手机布局。
+- `assets/portrait.png`：你提供的工作照片，保留原图。
+- `assets/favicon.svg`：网页图标。
+- `.nojekyll`、`robots.txt`、`sitemap.xml`：GitHub Pages 与搜索引擎相关文件。
 
-## Edit the website
+网站不需要安装依赖，也没有 JavaScript、下载 CV、独立 Research Experience 栏目或底部联系区。
 
-- `index.html`: biography, research projects, publications, experience, and links.
-- `assets/styles.css`: layout, typography, spacing, and mobile styles.
-- `assets/main.js`: publication filters/search, mobile navigation, and copying the email address.
-- `assets/Mingke_Wu_CV.pdf`: downloadable CV. Replace this file to update the download.
-- `assets/favicon.svg`: browser icon.
+## 上传
 
-Publication cards are visible without JavaScript. To add one, copy an existing `<article class="publication">` in `index.html`, update its content, and set `data-category` to `peer` or `preprint`. The displayed count updates automatically.
+1. 将此文件夹内的文件和 `assets` 目录上传到 `sorrymaker03.github.io` 仓库根目录。
+2. 确保 `index.html` 直接位于仓库根目录。
+3. 在 **Settings → Pages** 中选择 **Deploy from a branch → main → /(root)** 并保存。
 
-## Local preview
+如果仓库已有上一版文件，新版不再使用 `assets/main.js` 和 `assets/Mingke_Wu_CV.pdf`，可以同时删除它们。
 
-From this directory, run `python3 -m http.server 8000 --bind 127.0.0.1`, then open `http://127.0.0.1:8000`.
-
-## Content notes
-
-The content follows `CV_Mingke_word.docx` (updated November 2026). Research summaries are shortened for web reading. Publication titles, author lists, journal names, and publication statuses follow the supplied CV; they are not independently reclassified. The cell-pattern graphic is an abstract illustration, not experimental data. The site has no analytics or contact-form service.
+双击 `index.html` 即可在本地预览。详细步骤见 `上传说明.txt`。
