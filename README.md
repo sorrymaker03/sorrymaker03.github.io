@@ -11,7 +11,7 @@ A responsive, static academic homepage for https://sorrymaker03.github.io/.
 - `robots.txt` and `sitemap.xml`: indexing metadata.
 - `上传说明.txt`: Chinese upload and editing guide.
 
-The page contains About (research keywords), Publications, Education (Peking University undergraduate degree and Yale visiting student exchange), and Honors & Awards, in that order. It uses system fonts and has no build step, dependencies, tracking scripts, or third-party font requests.
+The page contains About (research keywords), Education (Peking University undergraduate degree and Yale visiting student exchange), Publications, and Honors & Awards, in that order. It uses system fonts and has no build step, dependencies, tracking scripts, or third-party font requests.
 
 ## Update GitHub Pages
 
