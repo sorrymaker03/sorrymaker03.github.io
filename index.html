@@ -41,8 +41,8 @@ h1, h2 { font-family: var(--serif); }
 h1 { margin: 0 0 10px; font-size: 44px; line-height: 1.15; letter-spacing: -1px; font-weight: 700; }
 .research-fields { margin: 0 0 15px; font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: -.2px; }
 .research-fields > span { color: #969696; margin-inline: 4px; font-weight: 400; }
-.hero-intro { max-width: 800px; margin: 0; color: #505050; font-size: 18px; line-height: 1.75; }
-.hero-intro strong { color: var(--ink); font-weight: 600; }
+
+
 .social-links { display: flex; align-items: center; gap: 12px; margin-top: 13px; margin-left: -7px; }
 .social-links a { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; text-decoration: none; color: #505050; }
 .social-links a:hover { color: #111; transform: translateY(-1px); }
@@ -51,24 +51,24 @@ h1 { margin: 0 0 10px; font-size: 44px; line-height: 1.15; letter-spacing: -1px;
 .content-section { margin: 0 0 48px; }
 .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 25px; padding-bottom: 9px; margin-bottom: 24px; border-bottom: 1.5px solid #3a3a3a; }
 .section-head h2 { margin: 0; font-size: 30px; line-height: 1.25; letter-spacing: -.45px; }
-.section-index { color: #8a8a8a; font-size: 14px; font-variant-numeric: tabular-nums; letter-spacing: .08em; }
-.about-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 64px; }
+
+
 h3 { margin: 0 0 19px; font-size: 19px; line-height: 1.5; font-weight: 650; }
 .academic-entry { margin: 0 0 21px; }
 .academic-entry:last-child { margin-bottom: 0; }
 .entry-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
-.entry-heading h4 { margin: 0; font-size: 18px; font-weight: 650; line-height: 1.55; }
+.entry-heading h3 { margin: 0; font-size: 18px; font-weight: 650; line-height: 1.55; }
 .entry-heading time, .entry-date { flex-shrink: 0; font-size: 16px; color: var(--muted); font-style: italic; white-space: nowrap; }
 .academic-entry p { margin: 2px 0 0; }
 .entry-role { font-size: 17px; line-height: 1.65; }
 .entry-detail { font-size: 17px; line-height: 1.65; color: var(--muted); }
-.academic-metrics { display: flex; gap: 5px 16px; flex-wrap: wrap; color: var(--muted); font-size: 16px; }
-.academic-metrics strong { font-weight: 600; color: #444; }
+
+
 .awards { margin: 0; padding: 0; list-style: none; }
 .awards li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; column-gap: 18px; padding: 0 0 12px; margin: 0 0 11px; border-bottom: 1px solid #ededed; font-size: 17px; line-height: 1.6; }
 .awards li:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
 .awards time { color: var(--muted); font-size: 16px; font-style: italic; font-variant-numeric: tabular-nums; }
-.award-rank { color: #777; font-size: 15px; white-space: nowrap; }
+
 .publication-group { margin-top: 27px; }
 .publication-group h3 { margin: 0 0 5px; font-size: 19px; font-weight: 650; }
 .publications-list { list-style: none; margin: 0; padding: 0; counter-reset: paper; }
@@ -88,26 +88,26 @@ h3 { margin: 0 0 19px; font-size: 19px; line-height: 1.5; font-weight: 650; }
 .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); padding: 20px 0 30px; font-size: 14px; color: #747474; }
 .site-footer a { text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; }
-@media (min-width: 1700px) { .wrap { width: min(1280px, calc(100% - 160px)); } .about-grid { gap: 80px; } }
+@media (min-width: 1700px) { .wrap { width: min(1280px, calc(100% - 160px)); }  }
 @media (max-width: 1100px) {
   .wrap { width: calc(100% - 72px); }
   .hero { grid-template-columns: 200px minmax(0,1fr); gap: 44px; padding-block: 44px; }
   .portrait { width: 200px; height: 200px; }
-  .about-grid { gap: 36px; }
+  
   .entry-heading { display: block; }
   .entry-heading time, .entry-date { display: block; margin-bottom: 2px; }
 }
 @media (max-width: 820px) {
   .wrap { width: calc(100% - 48px); }
-  .about-grid { grid-template-columns: 1fr; gap: 30px; }
+  
   .entry-heading { display: flex; }
   .entry-heading time, .entry-date { display: inline; margin: 0; }
   .hero { grid-template-columns: 160px minmax(0,1fr); gap: 30px; }
   .portrait { width: 160px; height: 160px; }
   h1 { font-size: 38px; }
   .research-fields { font-size: 19px; }
-  .hero-intro { font-size: 17px; line-height: 1.7; }
-  .honors { max-width: none; }
+  
+  
 }
 @media (max-width: 600px) {
   html { scroll-padding-top: 82px; }
@@ -122,24 +122,24 @@ h3 { margin: 0 0 19px; font-size: 19px; line-height: 1.5; font-weight: 650; }
   h1 { margin-bottom: 9px; font-size: 36px; letter-spacing: -.75px; }
   .research-fields { font-size: 18px; margin-bottom: 15px; }
   .research-fields > span { margin-inline: 2px; }
-  .hero-intro { font-size: 17px; line-height: 1.75; text-align: left; }
+  
   .social-links { justify-content: center; margin: 12px 0 0; gap: 16px; }
   .social-links a { width: 44px; height: 44px; }
   .content-section { margin-bottom: 35px; }
   .section-head { margin-bottom: 20px; padding-bottom: 8px; }
   .section-head h2 { font-size: 27px; }
-  .section-index { font-size: 13px; }
+  
   h3, .publication-group h3 { font-size: 18px; margin-bottom: 16px; }
   .entry-heading { display: block; }
   .entry-heading time, .entry-date { display: block; font-size: 15px; margin: 2px 0 3px; }
-  .entry-heading h4 { font-size: 18px; }
+  .entry-heading h3 { font-size: 18px; }
   .entry-role, .entry-detail { font-size: 17px; }
   .academic-entry { margin-bottom: 20px; }
-  .academic-metrics { gap: 3px 14px; font-size: 15px; }
-  .about-grid { gap: 28px; }
+  
+  
   .awards li { gap: 14px; font-size: 17px; margin-bottom: 10px; padding-bottom: 10px; }
   .awards time { font-size: 15px; }
-  .award-rank { font-size: 14px; }
+  
   .publication-group { margin-top: 23px; }
   .publication-group h3 { margin-bottom: 2px; }
   .paper { padding: 19px 0 20px 31px; }
@@ -159,13 +159,37 @@ h3 { margin: 0 0 19px; font-size: 19px; line-height: 1.5; font-weight: 650; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .social-links a:hover { transform: none; } }
 @media print {
-  .site-header, .social-links, .skip-link, .section-index, .site-footer a { display: none; }
+  .site-header, .social-links, .skip-link, .site-footer a { display: none; }
   .wrap { width: 100%; }
   .hero { padding: 0 0 25px; grid-template-columns: 110px 1fr; gap: 25px; }
   .portrait { width: 110px; height: 110px; }
   h1 { font-size: 30px; }
-  .about-grid { grid-template-columns: 1.3fr 1fr; gap: 30px; }
+  
   .paper { break-inside: avoid; }
+}
+
+/* Concise profile and separate academic sections. */
+.interest-label { margin: 0 0 5px; font-size: 16px; font-weight: 600; color: #555; }
+.research-keywords { display: flex; flex-wrap: wrap; gap: 3px 0; margin: 0; padding: 0; list-style: none; color: #555; font-size: 18px; line-height: 1.75; }
+.research-keywords li:not(:last-child)::after { content: "·"; margin-inline: 12px; color: #999; }
+.education-list .academic-entry { margin: 0; padding: 17px 0 19px; border-bottom: 1px solid var(--line); }
+.education-list .academic-entry:first-child { padding-top: 0; }
+.education-list .academic-entry:last-child { border-bottom: 0; padding-bottom: 0; }
+.entry-heading h3 { margin: 0; }
+@media (max-width: 820px) {
+  html { scroll-padding-top: 125px; }
+  .header-inner { flex-wrap: wrap; row-gap: 2px; padding-block: 13px 9px; }
+  .site-nav { width: 100%; justify-content: space-between; gap: 12px; }
+  .site-nav a { padding-block: 6px; font-size: 15px; }
+}
+@media (max-width: 600px) {
+  .hero-copy .interest-label { text-align: left; font-size: 16px; margin-top: 17px; }
+  .research-keywords { flex-direction: column; gap: 2px; text-align: left; font-size: 17px; }
+  .research-keywords li:not(:last-child)::after { display: none; }
+  .site-nav a { font-size: 14px; }
+  .education-list .entry-heading { display: flex; flex-wrap: wrap; gap: 2px 14px; }
+  .education-list .entry-heading h3 { margin: 0; }
+  .education-list .entry-heading time, .education-list .entry-date { display: inline; }
 }
 
 </style>
@@ -175,66 +199,53 @@ h3 { margin: 0 0 19px; font-size: 19px; line-height: 1.5; font-weight: 650; }
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="wordmark" href="#top">Mingke Wu<span class="wordmark-dot" aria-hidden="true">.</span></a>
-    <nav class="site-nav" aria-label="Main navigation"><a href="#about">About</a><a href="#publications">Publications</a></nav>
+    <nav class="site-nav" aria-label="Main navigation"><a href="#about">About</a><a href="#publications">Publications</a><a href="#education">Education</a><a href="#honors">Honors</a></nav>
   </div>
 </header>
 <main class="wrap" id="main">
-  <div class="hero" aria-labelledby="profile-name">
+  <section class="hero" id="about" aria-labelledby="profile-name">
     <img class="portrait" src="assets/portrait.png" alt="Portrait of Mingke Wu" width="224" height="224" fetchpriority="high">
     <div class="hero-copy">
       <h1 id="profile-name">Mingke Wu</h1>
       <p class="research-fields">Genetics <span aria-hidden="true">/</span> Computational Biology</p>
-      <p class="hero-intro">I study how cells develop, organize, and change in disease through <strong>single-cell and spatial genomics</strong>. My work combines deep generative representation learning with interpretable computational models to connect molecular variation with biological function.</p>
+      <p class="interest-label">Research interests</p>
+      <ul class="research-keywords" aria-label="Research interests"><li>Single-cell genomics</li><li>Spatial transcriptomics</li><li>Deep generative models</li><li>Genetic perturbation</li></ul>
       <div class="social-links" aria-label="Academic profiles and email">
 <a href="https://github.com/sorrymaker03" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer"><svg class="icon github" viewbox="0 0 24 24" aria-hidden="true"><path d="M12 .297C5.37.297 0 5.67 0 12.297c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.725-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.776.418-1.305.762-1.605-2.665-.304-5.467-1.334-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.323 3.301 1.23A11.52 11.52 0 0 1 12 6.098c1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.655 1.652.244 2.873.12 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a>
 <a href="https://orcid.org/0009-0000-8873-0742" aria-label="ORCID" title="ORCID" target="_blank" rel="noopener noreferrer"><svg class="icon orcid" viewbox="0 0 24 24" aria-hidden="true"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24z"></path><circle cx="6.7" cy="6.4" r="1.1" fill="white"></circle><path d="M5.7 8.5h2v9h-2z" fill="white"></path><path d="M10 5.5h3.3c4.3 0 6.7 2.5 6.7 6s-2.4 6-6.7 6H10v-12zm2 1.8v8.4h1.3c3 0 4.6-1.7 4.6-4.2s-1.6-4.2-4.6-4.2H12z" fill="white"></path></svg></a>
 <a href="mailto:mingke4653@gmail.com" aria-label="Email Mingke Wu" title="mingke4653@gmail.com"><svg class="icon" viewbox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="1"></rect><path d="m3 5 9 8 9-8"></path></svg></a></div>
     </div>
-  </div>
+  </section>
 
-  <section class="content-section" id="about" aria-labelledby="about-title">
-    <div class="section-head"><h2 id="about-title">About</h2><span class="section-index" aria-hidden="true">01</span></div>
-    <div class="about-grid">
-      <div class="academic-background">
-        <h3>Education &amp; Academic Training</h3>
-        <article class="academic-entry">
-          <div class="entry-heading"><h4>Peking University</h4><time datetime="2026-07">Jul 2026</time></div>
-          <p class="entry-role">Bachelor of Medical Sciences · Five-year program</p>
-          <p class="academic-metrics"><span>GPA: <strong>3.71/4.0</strong></span><span>Rank: <strong>9/98</strong></span><span>Final defense: <strong>3/98</strong></span></p>
-        </article>
-        <article class="academic-entry">
-          <div class="entry-heading"><h4>Yale University</h4><span class="entry-date">Jul–Oct 2026</span></div>
-          <p class="entry-role">Remote Research Intern · Department of Genetics</p>
-          <p class="entry-detail">Advisor: Dr. Monkol Lek</p>
-        </article>
-        <article class="academic-entry">
-          <div class="entry-heading"><h4>Yale University</h4><span class="entry-date">Apr–Aug 2025</span></div>
-          <p class="entry-role">Visiting Student · Departments of Genetics &amp; Urology</p>
-          <p class="entry-detail">Advisors: Dr. Siyuan (Steven) Wang &amp; Dr. Ping Mu</p>
-        </article>
-        <article class="academic-entry">
-          <div class="entry-heading"><h4>Peking University</h4><span class="entry-date">Jun 2022–Jul 2026</span></div>
-          <p class="entry-role">Undergraduate Research Intern · Department of Immunology</p>
-          <p class="entry-detail">Advisor: Dr. Qing Ge</p>
-        </article>
-      </div>
-      <div class="honors">
-        <h3>Honors &amp; Awards</h3>
-        <ul class="awards" role="list"><li><span>Excellent Graduate Award <span class="award-rank">(top 2)</span></span><time datetime="2026">2026</time></li>
-<li><span>Grant for International Short-Term Exchange <span class="award-rank">(top 3)</span></span><time datetime="2025">2025</time></li>
-<li><span>Award for Scientific Research <span class="award-rank">(top 5)</span></span><time datetime="2025">2025</time></li>
-<li><span>Merit Student Award of Peking University <span class="award-rank">(top 5)</span></span><time datetime="2024">2024</time></li>
-<li><span>Outstanding Medical Student Scholarship, Second Prize <span class="award-rank">(top 5)</span></span><time datetime="2024">2024</time></li>
-<li><span>Merit Student Award of Peking University <span class="award-rank">(top 5)</span></span><time datetime="2023">2023</time></li>
-<li><span>Outstanding Medical Student Scholarship, Third Prize <span class="award-rank">(top 10)</span></span><time datetime="2023">2023</time></li></ul>
-      </div>
+<section class="content-section" id="publications" aria-labelledby="publications-title">
+    <div class="section-head"><h2 id="publications-title">Publications</h2></div>
+    <div class="publication-group"><h3>Peer-Reviewed Journal Articles</h3><ol class="publications-list" data-category="peer"><li class="paper" data-doi="10.1016/j.cancergen.2026.08.002"><article><h4 class="paper-title"><a href="https://doi.org/10.1016/j.cancergen.2026.08.002" target="_blank" rel="noopener noreferrer">Sparse integrative dictionary learning resolves conserved drug-response states in multiple myeloma (MM)</a></h4><p class="paper-authors"><strong class="self-author">Wu M</strong>, Lu J, Ge Q</p><p class="paper-venue"><strong class="journal">Cancer Genetics</strong><span class="venue-details"> · 2026;306–307:240–255</span> <a class="paper-resource" href="https://doi.org/10.1016/j.cancergen.2026.08.002" target="_blank" rel="noopener noreferrer" aria-label="Read Sparse integrative dictionary learning resolves conserved drug-response states in multiple myeloma (MM)">Paper<span aria-hidden="true"> ↗</span></a></p></article></li><li class="paper" data-doi="10.3389/fbinf.2026.1880333"><article><h4 class="paper-title"><a href="https://doi.org/10.3389/fbinf.2026.1880333" target="_blank" rel="noopener noreferrer">Systematic evaluation of spatial transcriptomic annotation methods reveals conserved tumor microenvironment programs in NSCLC</a></h4><p class="paper-authors"><strong class="self-author">Wu M</strong>, Zhou Y, Xu D</p><p class="paper-venue"><strong class="journal">Frontiers in Bioinformatics</strong><span class="venue-details"> · 2026;6:1880333</span> <a class="paper-resource" href="https://doi.org/10.3389/fbinf.2026.1880333" target="_blank" rel="noopener noreferrer" aria-label="Read Systematic evaluation of spatial transcriptomic annotation methods reveals conserved tumor microenvironment programs in NSCLC">Paper<span aria-hidden="true"> ↗</span></a></p></article></li><li class="paper" data-doi="10.1186/s44505-026-00004-y"><article><h4 class="paper-title"><a href="https://doi.org/10.1186/s44505-026-00004-y" target="_blank" rel="noopener noreferrer">From structure to function: 3D tumor models for reconstructing tumor microenvironment regulatory networks and mechanical properties</a></h4><p class="paper-authors"><strong class="self-author">Wu M</strong>*, Xu D*, Dou X, Zhou Y, Lu J, Ge Q</p><p class="paper-venue"><strong class="journal">Cell Signaling, Inflammation &amp; Disease</strong><span class="venue-details"> · 2026;1:4</span> <a class="paper-resource" href="https://doi.org/10.1186/s44505-026-00004-y" target="_blank" rel="noopener noreferrer" aria-label="Read From structure to function: 3D tumor models for reconstructing tumor microenvironment regulatory networks and mechanical properties">Paper<span aria-hidden="true"> ↗</span></a></p></article></li><li class="paper" data-doi="10.6026/973206300223954"><article><h4 class="paper-title"><a href="https://doi.org/10.6026/973206300223954" target="_blank" rel="noopener noreferrer">SPADE: An R package for spatial proximity analysis of differential expression</a></h4><p class="paper-authors"><strong class="self-author">Wu M</strong></p><p class="paper-venue"><strong class="journal">Bioinformation</strong><span class="venue-details"> · 2026;22(7):3954–3962</span> <a class="paper-resource" href="https://doi.org/10.6026/973206300223954" target="_blank" rel="noopener noreferrer" aria-label="Read SPADE: An R package for spatial proximity analysis of differential expression">Paper<span aria-hidden="true"> ↗</span></a></p></article></li><li class="paper" data-doi="10.4236/jbm.2026.145025"><article><h4 class="paper-title"><a href="https://doi.org/10.4236/jbm.2026.145025" target="_blank" rel="noopener noreferrer">An integrated single-cell transcriptomic atlas of human tricuspid and aortic valve diseases</a></h4><p class="paper-authors">Wang J*, <strong class="self-author">Wu M</strong>*, Xu D, Jin R, Hao J, Wang X, Ge Q</p><p class="paper-venue"><strong class="journal">Journal of Biosciences and Medicines</strong><span class="venue-details"> · 2026;14:360–392</span> <a class="paper-resource" href="https://doi.org/10.4236/jbm.2026.145025" target="_blank" rel="noopener noreferrer" aria-label="Read An integrated single-cell transcriptomic atlas of human tricuspid and aortic valve diseases">Paper<span aria-hidden="true"> ↗</span></a></p></article></li></ol></div>
+<div class="publication-group"><h3>Preprints &amp; Under Review</h3><ol class="publications-list" data-category="preprint"><li class="paper" data-doi=""><article><h4 class="paper-title">A non-canonical MDK-SDC1-AKT axis controls SMAD2/3 activation to maintain proteostasis and apoptotic thresholds in plasma cell disorders</h4><p class="paper-authors">Guo J, Liu Y, Ge X, Dou X, He Q, Zhou J, <strong class="self-author">Wu M</strong>, Shao D, Wang Y, Zhao W, Wang Z, Liu C, Hao J, Lu D, Jin R, Chang Y, Lu J, Ge Q</p><p class="paper-venue"><strong class="journal">Chinese Medical Journal</strong><span class="venue-details"> · In press</span></p></article></li><li class="paper" data-doi="10.1101/2025.11.15.688526"><article><h4 class="paper-title"><a href="https://www.biorxiv.org/content/10.1101/2025.11.15.688526v1" target="_blank" rel="noopener noreferrer">SCAPE: An AI-Driven Platform for Comprehensive Single-Cell Data Analysis</a></h4><p class="paper-authors"><strong class="self-author">Wu M</strong>, Wu H, Zhou Y, Cheng S</p><p class="paper-venue"><strong class="journal">bioRxiv</strong><span class="venue-details"> · 2025. Preprint</span> <a class="paper-resource" href="https://www.biorxiv.org/content/10.1101/2025.11.15.688526v1" target="_blank" rel="noopener noreferrer" aria-label="Read SCAPE: An AI-Driven Platform for Comprehensive Single-Cell Data Analysis">Preprint<span aria-hidden="true"> ↗</span></a></p></article></li><li class="paper" data-doi=""><article><h4 class="paper-title">Prior autoimmune disease reshapes the clonal plasma-cell transcriptome and remodels the bone marrow microenvironment in immunoglobulin light-chain amyloidosis</h4><p class="paper-authors">Ge X, Guo J, Liu Y, Dou X, He Q, Xu D, <strong class="self-author">Wu M</strong>, Hao J, Wei Z, Xi W, Rong J, Lu J, Ge Q</p><p class="paper-venue"><strong class="journal">Advanced Science</strong><span class="venue-details"> · Revision submitted</span></p></article></li></ol></div>
+  </section>
+
+  <section class="content-section" id="education" aria-labelledby="education-title">
+    <div class="section-head"><h2 id="education-title">Education</h2></div>
+    <div class="education-list">
+      <article class="academic-entry">
+        <div class="entry-heading"><h3>Peking University</h3><time datetime="2026-07">Jul 2026</time></div>
+        <p class="entry-role">Bachelor of Medical Sciences</p>
+      </article>
+      <article class="academic-entry">
+        <div class="entry-heading"><h3>Yale University</h3><span class="entry-date">Apr–Aug 2025</span></div>
+        <p class="entry-role">Visiting Student · Departments of Genetics &amp; Urology</p>
+      </article>
     </div>
   </section>
 
-  <section class="content-section" id="publications" aria-labelledby="publications-title">
-    <div class="section-head"><h2 id="publications-title">Publications</h2><span class="section-index" aria-hidden="true">02</span></div>
-    <div class="publication-group"><h3>Peer-Reviewed Journal Articles</h3><ol class="publications-list" data-category="peer"><li class="paper" data-doi="10.1016/j.cancergen.2026.08.002"><article><h4 class="paper-title"><a href="https://doi.org/10.1016/j.cancergen.2026.08.002" target="_blank" rel="noopener noreferrer">Sparse integrative dictionary learning resolves conserved drug-response states in multiple myeloma (MM)</a></h4><p class="paper-authors"><strong class="self-author">Wu M</strong>, Lu J, Ge Q</p><p class="paper-venue"><strong class="journal">Cancer Genetics</strong><span class="venue-details"> · 2026;306–307:240–255</span> <a class="paper-resource" href="https://doi.org/10.1016/j.cancergen.2026.08.002" target="_blank" rel="noopener noreferrer" aria-label="Read Sparse integrative dictionary learning resolves conserved drug-response states in multiple myeloma (MM)">Paper<span aria-hidden="true"> ↗</span></a></p></article></li><li class="paper" data-doi="10.3389/fbinf.2026.1880333"><article><h4 class="paper-title"><a href="https://doi.org/10.3389/fbinf.2026.1880333" target="_blank" rel="noopener noreferrer">Systematic evaluation of spatial transcriptomic annotation methods reveals conserved tumor microenvironment programs in NSCLC</a></h4><p class="paper-authors"><strong class="self-author">Wu M</strong>, Zhou Y, Xu D</p><p class="paper-venue"><strong class="journal">Frontiers in Bioinformatics</strong><span class="venue-details"> · 2026;6:1880333</span> <a class="paper-resource" href="https://doi.org/10.3389/fbinf.2026.1880333" target="_blank" rel="noopener noreferrer" aria-label="Read Systematic evaluation of spatial transcriptomic annotation methods reveals conserved tumor microenvironment programs in NSCLC">Paper<span aria-hidden="true"> ↗</span></a></p></article></li><li class="paper" data-doi="10.1186/s44505-026-00004-y"><article><h4 class="paper-title"><a href="https://doi.org/10.1186/s44505-026-00004-y" target="_blank" rel="noopener noreferrer">From structure to function: 3D tumor models for reconstructing tumor microenvironment regulatory networks and mechanical properties</a></h4><p class="paper-authors"><strong class="self-author">Wu M</strong>*, Xu D*, Dou X, Zhou Y, Lu J, Ge Q</p><p class="paper-venue"><strong class="journal">Cell Signaling, Inflammation &amp; Disease</strong><span class="venue-details"> · 2026;1:4</span> <a class="paper-resource" href="https://doi.org/10.1186/s44505-026-00004-y" target="_blank" rel="noopener noreferrer" aria-label="Read From structure to function: 3D tumor models for reconstructing tumor microenvironment regulatory networks and mechanical properties">Paper<span aria-hidden="true"> ↗</span></a></p></article></li><li class="paper" data-doi="10.6026/973206300223954"><article><h4 class="paper-title"><a href="https://doi.org/10.6026/973206300223954" target="_blank" rel="noopener noreferrer">SPADE: An R package for spatial proximity analysis of differential expression</a></h4><p class="paper-authors"><strong class="self-author">Wu M</strong></p><p class="paper-venue"><strong class="journal">Bioinformation</strong><span class="venue-details"> · 2026;22(7):3954–3962</span> <a class="paper-resource" href="https://doi.org/10.6026/973206300223954" target="_blank" rel="noopener noreferrer" aria-label="Read SPADE: An R package for spatial proximity analysis of differential expression">Paper<span aria-hidden="true"> ↗</span></a></p></article></li><li class="paper" data-doi="10.4236/jbm.2026.145025"><article><h4 class="paper-title"><a href="https://doi.org/10.4236/jbm.2026.145025" target="_blank" rel="noopener noreferrer">An integrated single-cell transcriptomic atlas of human tricuspid and aortic valve diseases</a></h4><p class="paper-authors">Wang J*, <strong class="self-author">Wu M</strong>*, Xu D, Jin R, Hao J, Wang X, Ge Q</p><p class="paper-venue"><strong class="journal">Journal of Biosciences and Medicines</strong><span class="venue-details"> · 2026;14:360–392</span> <a class="paper-resource" href="https://doi.org/10.4236/jbm.2026.145025" target="_blank" rel="noopener noreferrer" aria-label="Read An integrated single-cell transcriptomic atlas of human tricuspid and aortic valve diseases">Paper<span aria-hidden="true"> ↗</span></a></p></article></li></ol></div>
-<div class="publication-group"><h3>Preprints &amp; Under Review</h3><ol class="publications-list" data-category="preprint"><li class="paper" data-doi=""><article><h4 class="paper-title">A non-canonical MDK-SDC1-AKT axis controls SMAD2/3 activation to maintain proteostasis and apoptotic thresholds in plasma cell disorders</h4><p class="paper-authors">Guo J, Liu Y, Ge X, Dou X, He Q, Zhou J, <strong class="self-author">Wu M</strong>, Shao D, Wang Y, Zhao W, Wang Z, Liu C, Hao J, Lu D, Jin R, Chang Y, Lu J, Ge Q</p><p class="paper-venue"><strong class="journal">Chinese Medical Journal</strong><span class="venue-details"> · In press</span></p></article></li><li class="paper" data-doi="10.1101/2025.11.15.688526"><article><h4 class="paper-title"><a href="https://www.biorxiv.org/content/10.1101/2025.11.15.688526v1" target="_blank" rel="noopener noreferrer">SCAPE: An AI-Driven Platform for Comprehensive Single-Cell Data Analysis</a></h4><p class="paper-authors"><strong class="self-author">Wu M</strong>, Wu H, Zhou Y, Cheng S</p><p class="paper-venue"><strong class="journal">bioRxiv</strong><span class="venue-details"> · 2025. Preprint</span> <a class="paper-resource" href="https://www.biorxiv.org/content/10.1101/2025.11.15.688526v1" target="_blank" rel="noopener noreferrer" aria-label="Read SCAPE: An AI-Driven Platform for Comprehensive Single-Cell Data Analysis">Preprint<span aria-hidden="true"> ↗</span></a></p></article></li><li class="paper" data-doi=""><article><h4 class="paper-title">Prior autoimmune disease reshapes the clonal plasma-cell transcriptome and remodels the bone marrow microenvironment in immunoglobulin light-chain amyloidosis</h4><p class="paper-authors">Ge X, Guo J, Liu Y, Dou X, He Q, Xu D, <strong class="self-author">Wu M</strong>, Hao J, Wei Z, Xi W, Rong J, Lu J, Ge Q</p><p class="paper-venue"><strong class="journal">Advanced Science</strong><span class="venue-details"> · Revision submitted</span></p></article></li></ol></div>
+  <section class="content-section" id="honors" aria-labelledby="honors-title">
+    <div class="section-head"><h2 id="honors-title">Honors &amp; Awards</h2></div>
+    <ul class="awards" role="list"><li><span>Excellent Graduate Award</span><time datetime="2026">2026</time></li>
+<li><span>Grant for International Short-Term Exchange</span><time datetime="2025">2025</time></li>
+<li><span>Award for Scientific Research</span><time datetime="2025">2025</time></li>
+<li><span>Merit Student Award of Peking University</span><time datetime="2024">2024</time></li>
+<li><span>Outstanding Medical Student Scholarship, Second Prize</span><time datetime="2024">2024</time></li>
+<li><span>Merit Student Award of Peking University</span><time datetime="2023">2023</time></li>
+<li><span>Outstanding Medical Student Scholarship, Third Prize</span><time datetime="2023">2023</time></li></ul>
   </section>
 </main>
 <footer class="wrap site-footer"><span>© 2026 Mingke Wu</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
