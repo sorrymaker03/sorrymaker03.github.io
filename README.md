@@ -1,25 +1,24 @@
-# Mingke Wu · Academic homepage
+# Mingke Wu — Academic Homepage
 
-为 **https://sorrymaker03.github.io/** 准备的个人学术主页。
+A responsive, static academic homepage for https://sorrymaker03.github.io/.
 
-页面分为 **About → Publications** 两个部分。About 包含研究方向、教育背景、Yale 访问经历、学术训练和获奖信息；Publications 保留 8 篇完整引用和原始论文链接。
+## Files
 
-## 文件
+- `index.html`: all content and embedded CSS. Open this file directly to preview.
+- `assets/portrait.png`: original supplied portrait.
+- `assets/favicon.svg`: site icon.
+- `.nojekyll`: serve as a plain static site on GitHub Pages.
+- `robots.txt` and `sitemap.xml`: indexing metadata.
+- `上传说明.txt`: Chinese upload and editing guide.
 
-- `index.html`：姓名、介绍、教育、获奖、论文和三个联系方式图标。
-- `assets/styles.css`：学术风格的白底排版、字号和手机布局。
-- `assets/portrait.png`：你提供的工作照片，保留原图。
-- `assets/favicon.svg`：网页图标。
-- `.nojekyll`、`robots.txt`、`sitemap.xml`：GitHub Pages 与搜索引擎相关文件。
+The page contains About (education, Yale training, and honors) followed by Publications. It uses system fonts and has no build step, dependencies, tracking scripts, or third-party font requests.
 
-网站不需要安装依赖，也没有 JavaScript、下载 CV、独立 Research Experience 栏目或底部联系区。
+## Update GitHub Pages
 
-## 上传
+Replace `index.html` in the repository root and commit to the configured publishing branch. Upload the `assets` folder when its files change. Do not upload the ZIP itself or an extra enclosing folder.
 
-1. 将此文件夹内的文件和 `assets` 目录上传到 `sorrymaker03.github.io` 仓库根目录。
-2. 确保 `index.html` 直接位于仓库根目录。
-3. 在 **Settings → Pages** 中选择 **Deploy from a branch → main → /(root)** 并保存。
+Styles are embedded in `index.html` to keep content and styling in the same deployment artifact. The previous `assets/styles.css` file is no longer requested and may be deleted from the remote repository. Hosting and browser caches can still delay changes; an already-open page needs to be refreshed.
 
-如果仓库已有上一版文件，新版不再使用 `assets/main.js` 和 `assets/Mingke_Wu_CV.pdf`，可以同时删除它们。
+## Editing
 
-双击 `index.html` 即可在本地预览。详细步骤见 `上传说明.txt`。
+Edit typography, width, spacing and responsive rules inside the `<style>` element. Edit academic content in `<body>`. Contact links have accessible labels while displaying only icons.
